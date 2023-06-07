@@ -15,7 +15,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Install Dependencies
-        run: npm Install
+        run: npm install
 
       - name: Run token-transformer
         run: npx token-transformer input/src/tokens.json input/src/tokens-input.json --resolveReferences false
