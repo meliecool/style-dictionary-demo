@@ -28,4 +28,5 @@ jobs:
         with:
           author_name: 'meliecool'
           message: 'chore: style-dictionary output'
+          github_token: ${{ secrets.GH_PAT }}
           add: '.'
