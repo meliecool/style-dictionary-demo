@@ -15,13 +15,13 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn
 
       - name: Run token-transformer
-        run: npx token-transformer input/tokens.json input/tokens-input.json --resolveReferences false
+        run: yarn build:token-transformer
 
       - name: Run style-dictionary
-        run: npx style-dictionary build
+        run: yarn build:style-dictionary
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
