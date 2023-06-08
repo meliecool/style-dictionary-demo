@@ -24,7 +24,7 @@
     "type": "color"
   },
   "primary": {
-    "value": "{colors.blue.100}",
+    "value": "#ff00fd",
     "type": "color"
   },
   "size": {
