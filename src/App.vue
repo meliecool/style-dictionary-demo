@@ -13,6 +13,7 @@ import HelloWorld from './components/HelloWorld.vue';
       height="125"
     />
 
+    <p>HOLA</p>
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
@@ -26,8 +27,11 @@ import HelloWorld from './components/HelloWorld.vue';
   <RouterView />
 </template>
 
-<style scoped>
-@import './styles/main.scss';
+<style scoped lang="scss">
+@import '../src/styles/main.scss';
+p {
+  color: $error;
+}
 
 header {
   line-height: 1.5;

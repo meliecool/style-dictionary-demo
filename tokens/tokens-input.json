@@ -19,6 +19,10 @@
     "value": "{colors.red.300}",
     "type": "color"
   },
+  "success-pressed": {
+    "value": "{colors.green.300}",
+    "type": "color"
+  },
   "size": {
     "32": {
       "value": 32.72,

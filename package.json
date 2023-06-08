@@ -21,6 +21,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "sass": "^1.63.0",
+    "sass-loader": "^13.3.1",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
   },
