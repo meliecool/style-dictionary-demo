@@ -30,7 +30,7 @@ import HelloWorld from './components/HelloWorld.vue';
 <style scoped lang="scss">
 @import '../src/styles/main.scss';
 p {
-  color: $error;
+  color: $primary;
 }
 
 header {

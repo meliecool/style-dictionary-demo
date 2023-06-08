@@ -23,6 +23,10 @@
     "value": "{colors.green.300}",
     "type": "color"
   },
+  "primary": {
+    "value": "{colors.blue.100}",
+    "type": "color"
+  },
   "size": {
     "32": {
       "value": 32.72,
@@ -56,6 +60,20 @@
       },
       "300": {
         "value": "#176400",
+        "type": "color"
+      }
+    },
+    "blue": {
+      "100": {
+        "value": "#2900ff",
+        "type": "color"
+      },
+      "200": {
+        "value": "#1b00a4",
+        "type": "color"
+      },
+      "300": {
+        "value": "#0d005b",
         "type": "color"
       }
     }
