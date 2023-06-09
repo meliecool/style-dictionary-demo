@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+@mixin title() {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-jumbo;
+  line-height: $line-height-large;
+}
+
+@mixin subtitle() {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-xlarge;
+}

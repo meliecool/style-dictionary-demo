@@ -1,98 +1,48 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
-import HelloWorld from './components/HelloWorld.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <p>HOLA</p>
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+    <div>
+      <h1 class="title">Style-Dictionary</h1>
+      <h2 class="subtitle">An extension to rule them all</h2>
     </div>
+    <img class="logo" src="@/assets/logo.svg" width="150" height="150" />
   </header>
 
-  <RouterView />
+  <img class="arc" src="@/assets/arc.svg" />
+
+  <RouterView class="view" />
 </template>
 
 <style scoped lang="scss">
+@import url('https://fonts.googleapis.com/css?family=League+Spartan');
 @import '../src/styles/main.scss';
-p {
-  color: $primary;
-}
 
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  padding: 40px 60px 100px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  @include title();
+  color: $colors-dark-text;
+}
+
+.subtitle {
+  @include subtitle();
+  color: $colors-dark-text;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  filter: grayscale(100%);
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.arc {
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 </style>
