@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
+import ArcImg from './components/ArcImg.vue';
 </script>
 
 <template>
@@ -11,7 +12,7 @@ import { RouterView } from 'vue-router';
     <img class="logo" src="@/assets/logo.svg" width="150" height="150" />
   </header>
 
-  <img class="arc" src="@/assets/arc.svg" />
+  <ArcImg class="arc" src="@/assets/arc.svg" />
 
   <RouterView class="view" />
 </template>
