@@ -29,11 +29,11 @@
       "type": "color"
     },
     "primary": {
-      "value": "{colors.yellow}",
+      "value": "{colors.blue}",
       "type": "color"
     },
     "secondary": {
-      "value": "{colors.orange}",
+      "value": "{colors.turquoise}",
       "type": "color"
     },
     "dark": {
@@ -42,7 +42,7 @@
         "type": "color"
       },
       "text": {
-        "value": "{colors.white}",
+        "value": "{colors.blue}",
         "type": "color"
       }
     },
